@@ -4,12 +4,14 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from  utils import *
+import warnings
 from statsmodels.tsa.arima.model import ARIMA
 from statsmodels.tsa.holtwinters import SimpleExpSmoothing, Holt
 from statsmodels.graphics.tsaplots import plot_acf
 from sklearn.linear_model import LinearRegression
+from statsmodels.tools.sm_exceptions import ConvergenceWarning
 
-
+warnings.filterwarnings("ignore", category=ConvergenceWarning)
 
 st.set_page_config(
     page_title="Predictive Analysis",
@@ -235,7 +237,6 @@ with col2:
         plt.tight_layout()
         st.pyplot(fig)
         
-        
 
 
 with col1:
@@ -258,39 +259,3 @@ with col1:
     )
 
     st.altair_chart(heatmap, use_container_width=True)
-    
-    
-    
-    # import pandas as pd
-    # import matplotlib.pyplot as plt
-    # from statsmodels.graphics.tsaplots import plot_acf
-    # import streamlit as st
-
-    # # Data
-    # data = {
-    #     'Month': ['2023-06-01', '2023-07-01', '2023-08-01', '2023-09-01', '2023-10-01', '2023-11-01', '2023-12-01', 
-    #               '2024-01-01', '2024-02-01', '2024-03-01', '2024-04-01', '2024-05-01', '2024-06-01'],
-    #     'Cost': [35027.0, 48065.0, 18370.0, 37480.0, 23390.0, 24200.0, 13748.0, 16720.0, 23905.0, 24914.0, 24160.0, 31230.0, 21873.0],
-    #     'Sales': [54350.0, 66417.0, 51712.0, 59582.0, 89290.0, 50590.0, 48415.0, 40837.0, 31339.0, 52790.0, 53010.0, 58537.0, 15850.0],
-    #     'Profit': [19323.0, 18352.0, 33342.0, 22102.0, 65900.0, 26390.0, 34667.0, 24117.0, 7434.0, 27876.0, 28850.0, 27307.0, -6023.0]
-    # }
-
-    # # Create DataFrame
-    # df = pd.DataFrame(data)
-    # df['Month'] = pd.to_datetime(df['Month'])
-
-    # # Streamlit app
-    # st.title("Autocorrelation Plots for Sales, Cost, and Profit")
-
-    # # Plotting autocorrelation for Sales, Cost, and Profit
-    # fig, ax = plt.subplots(3, 1, figsize=(12, 15))
-
-    # plot_acf(df['Sales'], ax=ax[0], lags=12, title="Autocorrelation for Sales")
-    # plot_acf(df['Cost'], ax=ax[1], lags=12, title="Autocorrelation for Cost")
-    # plot_acf(df['Profit'], ax=ax[2], lags=12, title="Autocorrelation for Profit")
-
-    # plt.tight_layout()
-    # st.pyplot(fig)
-
-
-
