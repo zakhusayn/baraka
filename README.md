@@ -1,37 +1,31 @@
 # Baraka
 
-Baraka is a comprehensive Streamlit dashboard that provides a detailed analysis of financial performance, product offerings, and future trends. It is designed to help businesses make informed decisions through insightful data visualizations and advanced predictive analytics.
+Baraka is a comprehensive Streamlit dashboard specifically built for Baraka Hygienics. It offers detailed analysis of financial performance, product offerings, and future trends. Designed to help the client make informed decisions, Baraka provides insightful data visualizations and advanced predictive analytics.
 
 ---
-### Installation
+### Getting Started
 
 To install and run Baraka locally, follow these steps:
-1. Clone the repository
+
 ```sh
-https://github.com/zakhusayn/baraka.git
-```
-2. Create a virtual environment & activate it 
-```sh
+git clone https://github.com/zakhusayn/baraka.git
+cd baraza
+
 python -m venv venv
 source venv/bin/activate  # On Windows use venv\Scripts\activate
-```
-3. Install the required dependencies:
-```sh
+
+#Install the required dependencies:
 pip install -r requirements.txt
 ```
-4. Run the Streamlit app:
+
+Run the Streamlit app:
 ```sh
 streamlit run Dashboard.py
 ```
 
-### Usage
-Once the application is running, you can access the dashboard through your web browser.
-####  Pages Overview
-Baraka consists of the following main pages:
-1. **Interface Page:** The landing page for the Baraka dashboard
-2. **Proft/Loss & Cost Analysis:**  Detailed financial performance analysis
-3. **Product Analysis:** In-depth analysis of product offering
-4. **Predictive analysis:** Advance time-series forecasting to predict future trends and demands
+### Documentation
+For detailed information on how to use Baraka and its features, please refer to the [Documentation](docs). This document provides comprehensive guidelines and examples to help you make the most out of Baraka.
+
 
 ### License 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
