@@ -22,5 +22,5 @@ For detailed information on how to use Baraka and its features, please refer to 
 ### License 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-### 🙏🏾 Acknowledgements
+### Acknowledgements
  We would like to extend our gratitude to Zakariya Hussein, Chesia Anyika, Neem Ndanu, and Diana Ndanu for their invaluable contributions to this project. We also thank USIU-Africa and all others who supported and provided guidance throughout the development of Baraka.
