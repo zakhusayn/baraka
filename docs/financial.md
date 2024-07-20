@@ -1,9 +1,10 @@
 
 ## Financial Performance Analysis
 
+![Financial Performance Analysis](/asset/financial.png "Financial Performance Analysis")
 
-This page dashboard offers a detailed and interactive way to monitor and analyze profit, cost, and sales data over time. The dashboard includes a sidebar with controls to filter data by specific years or view all available years, allowing for flexible data analysis. Additionally, users can customize the appearance of the dashboard by selecting different color themes from the dropdown menu. 
+The dashboard provides an interactive way to monitor and analyze profit, cost, and sales data over time. It features a sidebar for filtering data by years and customizing the dashboard's color themes.
 
-The main area of the dashboard displays key financial metrics, including total profit and cost, each accompanied by a percentage change indicator to show the variation compared to the previous period. Several charts provide visual insights: a stacked bar chart illustrating the cost, sales, and profit over time; a line chart detailing monthly sales figures; a trends line chart comparing monthly cost, profit, and sales data; and a pie chart showing the distribution of various expenditure types, such as Internet, KRA Penalty, Raw Materials, Rent, and Transport. 
+Key financial metrics like total profit and cost are displayed with percentage change indicators. Visual insights are provided through several charts: a stacked bar chart for cost, sales, and profit over time; a line chart for monthly sales figures; a trends line chart comparing monthly data; and a pie chart for expenditure types like Internet, KRA Penalty, Raw Materials, Rent, and Transport.
 
-This dashboard leverages the power of Streamlit and data visualization libraries like Vega-Altair or Matplotlib to create a user-friendly interface for financial performance analysis. 
+Powered by Streamlit and data visualization libraries like Vega-Altair or Matplotlib, the dashboard offers a user-friendly interface for financial performance analysis.
